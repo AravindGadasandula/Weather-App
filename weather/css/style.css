@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  background-color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.wrapper {
+  box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.5);
+  background-image: radial-gradient(
+    circle farthest-corner at 7.2% 13.6%,
+    rgba(37, 249, 245, 1) 0%,
+    rgba(8, 70, 218, 1) 90%
+  );
+  width: 30%;
+  border-radius: 20px;
+  margin-top: 70px;
+  height: 87%;
+  background-color: burlywood;
+  margin-bottom: 100px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+#search-btn {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(247, 87, 0, 1) 0%,
+    rgba(249, 0, 0, 1) 90.1%
+  );
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  width: 37px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+#location-btn {
+  color: #fff;
+
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(247, 87, 0, 1) 0%,
+    rgba(249, 0, 0, 1) 90.1%
+  );
+  margin-left: 20px;
+  width: 30px;
+  border: none;
+  font-size: 22px;
+}
+
+input {
+  font-size: 18px;
+  border: none;
+  width: 200px;
+  outline: none;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  height: 36px;
+}
+
+.msg-container {
+  text-align: center;
+  width: 100%;
+  height: 90px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+#title {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#message {
+  padding-top: 5px;
+  text-align: center;
+}
+
+#date-container {
+  font-weight: 500;
+  padding: 20px 0px 20px 20px;
+}
+
+.city {
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+}
+.city span {
+  font-size: 20px;
+}
+.celcius {
+  font-size: 15px;
+}
+
+.temp {
+  font-weight: 510;
+  font-size: 40px;
+  text-align: center;
+}
+
+.weather-data {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.desc-container {
+  font-weight: 530;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.humidity-container {
+  font-weight: 530;
+  padding: 10px 0px 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.humidity {
+  font-size: 23px;
+}
+
+span {
+  padding-left: 4px;
+  font-size: 14px;
+}
+.pressure-container {
+  font-weight: 530;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pressure {
+  font-size: 23px;
+}
+
+.created-by {
+  padding-top: 16px;
+  font-size: 12px;
+  opacity: 0.2;
+
+  text-align: center;
+}
+
+.aravind {
+  font-weight: 600;
+  opacity: 0.2;
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+@media (max-width: 700px) {
+  body {
+    height: 110vh;
+  }
+  .wrapper {
+    border-radius: 20px;
+    margin-top: 50px;
+    width: 60%;
+    height: 90%;
+    margin-bottom: 100px;
+    padding-bottom: 30px;
+  }
+  input {
+    width: 60%;
+  }
+  #location-btn {
+    margin-left: 10px;
+    width: 14%;
+    border-radius: 8px;
+  }
+
+  #search-btn {
+    width: 16%;
+  }
+}
+
+@media (max-width: 460px) {
+  .wrapper {
+    width: 80%;
+    height: 85%;
+  }
+}
